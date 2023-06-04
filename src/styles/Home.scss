@@ -1,0 +1,281 @@
+@import "colors";
+
+
+.home {
+    width: 100%;
+    height: 100vh;
+background-image: linear-gradient(to right, $background, rgba(0, 0, 0, 0.8));
+// background-color: $background;
+
+    >main {
+        position: absolute;
+        text-transform: uppercase;
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        // overflow: hi dden;
+        justify-content: space-evenly   ;
+
+
+        .dev-pro{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            
+            h1 {
+                // display: flex;
+                // justify-content: center;
+                font: 400 4rem $text1;
+                color: $Heading;
+                // align-items:center;
+            }
+            
+            p {
+            
+                font: 900 1rem $text2;
+                // align-items:center;
+                color: $first;
+
+        }
+    }
+        .dev-pro-img{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            
+            >img{
+                height: 30rem;
+
+                width: 30rem;
+                border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+            // box-shadow: rgba(11, 188, 49, 0.35) 0px 5px 15px;
+            box-shadow: rgba(10, 236, 44, 0.25) 0px 54px 55px, rgba(10, 236, 44, 0.25) 0px -12px 30px, rgba(10, 236, 44, 0.25) 0px 4px 6px, rgba(10, 236, 44, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+            
+                
+            }
+        }
+        // .img{
+        //     position: absolute;
+        //     display: flex;
+        //     flex-direction: column;
+        //     width: 100%;
+        //     align-items: flex-end;
+        //     >img{
+        //         width: 30%;
+        //         border-radius: 50%;
+        //         animation: imgUp 0.7s linear infinite alternate;
+        //     }
+        // }
+
+        }
+
+         
+    
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // background: no-repeat center/auto url("../assets/1.png");
+        filter: blur(3px);
+    }
+}
+
+
+// About us
+.home2 {
+    width: 100%;
+    height: 100vh;
+    // background-color: $background;
+    background-image: linear-gradient(to right, $background, rgba(0, 0, 0, 0.8));
+    padding: 4rem 4rem;
+    // top: -12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0;
+     
+    main{
+        position: absolute;
+        display: flex;
+        margin: 0 3rem;
+        .about{
+            width: 70%;
+            padding: 0 14rem;
+           h3{
+            font: 400 3rem ;
+            font-size:2.5rem;
+        
+            color: $Heading;
+            >span{
+                color: white;
+            }
+           } 
+           p{
+            font-size: 1.2rem;
+            color: $first;
+            justify-content: center;
+            align-items: center;
+            
+            >span{
+                color: $Heading;
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+           }
+
+        }
+        >.about1{
+            width: 30%;
+            >div{
+                display: flex;
+                justify-content: space-between;
+                width: 75%;
+                background-color: rgba(125, 119, 119, 0.798);
+                margin-bottom: .3rem;
+                height: 5rem;
+                border-radius: 4px;
+                // box-shadow:  0px 5px 15px;
+                box-shadow: rgba(22, 169, 15, 0.584) 0px 5px 15px;
+                // box-shadow: rgba(22,169, 15, 0.584) 0px 22px 70px 4px;
+                
+                >div{
+                    margin:.2rem;
+                    padding: .9rem;
+                    
+                    >h4{
+                        color: $first;
+                        padding: .2rem;
+                        letter-spacing:.1rem;
+                        }
+                        >a{
+                            color: $Heading;
+                            text-decoration: underline;
+                        }
+                    }
+                    .sign{
+                        font-size: 1.5rem;
+                        color: $Heading;
+                    }
+                
+            }
+
+        }
+    }
+    
+    >img {
+        width: 30%;
+    }
+}
+
+// Skills
+.home3{
+    width: 100%;
+        height: 100vh;
+        // background-color: $background;
+        background-image: linear-gradient(to right, $background, rgba(0, 0, 0, 0.8));
+        padding: 4rem 4rem;
+        // top: -12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+
+}
+
+// Projects
+.projects{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    // background-color: green;
+
+    background-image: linear-gradient(to right, $background, rgba(0, 0, 0, 0.8));
+    h3{
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+        margin: 0 0 1rem 0 ;
+        border-bottom: .2rem solid rgba(142, 124, 124, 0.658);
+    }
+
+    main{
+                height: 90vh;
+        width: 80vw;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 50px;
+        column-gap: 20px;
+        row-gap: 16em;
+        
+
+     
+        >div{
+            width: fit-content;
+            height:fit-content;
+            border: 2px solid white;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // background-color:$Heading;
+            -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                background-color: rgba(255, 255, 255, 0.378);
+                       
+            margin: 1rem 2rem;
+            img{
+                max-width: 300px;
+
+                margin: 1rem .3rem;
+
+
+            }
+            &:hover{
+                // border: 2px solid green;
+                transition: ease-in;
+            }
+            .description{
+                width: fit-content;
+             
+            }
+            
+            .linkbtn{
+                // background-color: red;
+                margin: 1rem;
+                
+                a{
+                    margin: 10px;
+                    font-weight: bold;
+                    height: fit-content;
+                    width: fit-content;
+                    padding:.4rem;
+                    border: 2px solid black;
+                    background-color: $first;
+                    border-radius: 9px;
+                    &:hover{
+                        background-color: $Heading;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@keyframes imgUp {
+    to {
+        transform: translateX(-10px);
+    }
+}

@@ -1,0 +1,94 @@
+@import "colors";
+
+nav {
+    width: 100%;
+    padding: .7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    background-color: $first;
+    top: 0;
+    z-index: 10;
+    background-color: #000000;
+
+
+    >h4 {
+        text-transform: uppercase;
+        color: $topheading;
+
+        > span{
+            color: $first;
+        }
+    }
+
+    >main {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+      
+        
+        
+        >a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $first;
+            margin: 1rem;
+            
+        
+
+            &:hover {
+                color: $Heading;
+            }
+        }
+    }
+}
+
+
+// Second Header 
+.header {
+    width: fit-content;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 40%;
+    
+    position: fixed;
+    background-color: $first;
+    bottom: .5rem;
+    z-index: 2;
+    // background-color: rgba(0,0, 0, .5);
+        background: rgba(207, 180, 180, 0.3);
+    border-radius: 3rem;
+    // filter: blur(4px);
+    backdrop-filter: blur(15px);
+
+    >main {
+        width: fit-content;
+        display: flex;
+        
+
+        
+        
+        >a {
+            color: $first;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg{
+                font-size: 2rem;
+            }
+            
+            &:hover {
+                color: $Heading;
+                border-bottom: .1rem solid $Heading;
+                transition: all  .1s;
+            }
+        }
+  
+    }
+}
